@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.shadows-into-light-regular {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .white{
+    color: #fff;
+  }
+  
+
+body{
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(68, 61, 139, 0.8) ,rgba(0, 0, 0, 1)),url(../images/image2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navContainer{
+    width: 90%;
+    margin: auto;
+}
+
+.nav-div {
+    position: sticky;
+    top: 0;
+    background-color: #2e236c;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    height: 140px;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 90; /* Ensure the nav bar stays above other content */
+}
+
+.nav-div.scrolled {
+    background-color: rgba(46, 35, 108, 0.8); /* Color when scrolled */
+}
+
+nav{
+    height: 100px;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.logo{
+    width: 110px;
+    height: 100px;
+    cursor: pointer;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 100px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.nav-bar-icon {
+  }
+
+
+nav a:hover{
+    color: yellow;
+    font-size: 31px;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.side-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 400px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.side-bar li{
+    width: 100%;
+}
+
+.side-bar a{
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+.section1 p, .howToBuy p{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.side-image{
+    border: 10px solid #2e236c;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.text-image{
+    width: 500px;
+    cursor: pointer;
+}
+
+button{
+    width:200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid yellow;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button span{
+    position: absolute;
+    background-color: yellow;
+    height: 100%;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover{
+    border: none;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+.totalSupply{
+    border: 3px solid yellow;
+    border-radius: 50px;
+    height: 300px;
+    background-color: #2e236c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.totalSupply h2{
+    color: yellow;
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.totalSupply h3{
+    color: #cfcccc;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.shadowBack{
+    background: rgba(0, 0, 0, 0.2);
+}
+.howToBuy{
+    color: #cfcccc;
+
+}
+
+.howToBuy h2{
+    font-size: 4rem;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 900;
+    font-style: normal;
+    color: yellow;
+}
+
+.howToBuy h3{
+    font-size: 2rem;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 900;
+    font-style: normal;
+    color: yellow;
+}
+
+.border-round{
+    border: 1.5px solid yellow;
+    background: linear-gradient(rgba(68, 61, 139, 0.8) ,rgba(0, 0, 0, 1));
+    border-radius: 30px;
+    height: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animate{
+    animation: fadeIn 1s ease-in-out;
+}
+
+footer{
+    margin: 20px 0;
+    padding-bottom: 30px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-style: normal;
+    color: #cfcccc;
+
+}
+
+.tokenomics{
+    box-sizing: border-box;
+    border: 7px solid yellow;
+    border-radius: 10px;
+    background: linear-gradient(rgba(68, 61, 139, 0.85) ,rgba(0, 0, 0, 1)),url(../images/image3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20% 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.tokenomics h2{
+    font-size: 4rem;
+    color: yellow;
+    font-weight: 900;
+}
+
+.tokenomics ul{
+    list-style: none;
+    padding-bottom: 10px;
+    color: #cfcccc;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.tSupply{
+    font-size: 2.2rem;
+    color: rgb(169, 4, 4);
+    font-weight: 900;
+}
+
+.line{
+    border: 2px solid yellow;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width: 1157px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+
+    .totalSupply h2{
+        font-size: 3.5rem;
+    }
+    
+    .totalSupply h3{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 780px){
+    .tokenomics{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tokenomics h2{
+        font-size: 3rem;
+    }
+    
+    .tokenomics ul{
+        font-size: 1.5rem;
+    }
+    
+    #tSupply{
+ font-size: 2rem;
+    }
+}
+
+@media(max-width: 545px){
+    .side-bar{
+        width: 100%;
+    }
+
+    .text-image{
+        width: 300px;
+    }
+    .totalSupply h2{
+        font-size: 2.5rem;
+    }
+    
+    .totalSupply h3{
+        font-size: 1.2rem;
+    }
+}
+
